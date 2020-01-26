@@ -1,0 +1,10 @@
+debug: true
+
+server:
+  port: 8090
+
+monoliths:
+  catalogs:
+    integrate:
+      remoting:
+        httpinvoker.enabled: true

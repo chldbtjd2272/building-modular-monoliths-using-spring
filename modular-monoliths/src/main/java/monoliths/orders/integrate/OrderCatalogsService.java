@@ -1,19 +1,17 @@
 package monoliths.orders.integrate;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.springframework.stereotype.Component;
+
 import lombok.AllArgsConstructor;
 import monoliths.catalogs.domain.entity.Product;
-import monoliths.catalogs.domain.entity.ProductRepository;
 import monoliths.catalogs.domain.usecase.Catalogs;
-import monoliths.commons.SystemException;
 import monoliths.commons.model.OrderSheet;
 import monoliths.orders.domain.entity.OrderProduct;
 import monoliths.orders.domain.entity.OrderProductItem;
 import monoliths.orders.domain.entity.OrderProductMapper;
-import org.springframework.stereotype.Component;
-
-import java.util.List;
-import java.util.UUID;
-import java.util.stream.Collectors;
 
 @AllArgsConstructor
 @Component
